@@ -1,32 +1,32 @@
 # Python SOC Monitor
 
-A Python-based security monitoring and detection project.
+Et Python-basert prosjekt for sikkerhetsovervåking og deteksjon.
 
-## Project Goal
+## Prosjektmål
 
-The goal of this project is to build a small SOC monitoring system that collects security events, normalizes them, applies detection rules, and generates alerts for suspicious activity.
+Målet med dette prosjektet er å bygge et lite SOC-overvåkingssystem som samler inn sikkerhetshendelser, normaliserer dem, bruker deteksjonsregler og genererer varsler ved mistenkelig aktivitet.
 
-## Current Features
+## Nåværende funksjoner
 
-- Synthetic security events
-- Event processing with Python
-- Failed login detection prototype
-- Alert triggered after 3 failed login events
+- Syntetiske sikkerhetshendelser
+- Behandling av hendelser med Python
+- Prototype for deteksjon av mislykkede innloggingsforsøk
+- Varsel utløses etter 3 mislykkede innloggingshendelser
 
-## Project Architecture
+## Prosjektarkitektur
 
-Security Events
-→ Collector
-→ Normalization
-→ Detection Engine
-→ Alerts
+Sikkerhetshendelser
+→ Innsamling
+→ Normalisering
+→ Deteksjonsmotor
+→ Varsler
 → Database
 → API
-→ Dashboard
+→ Kontrollpanel
 
-## Current Status
+## Nåværende status
 
-- Phase 1: Project Setup and Git - Completed
-- Phase 2: Synthetic Events MVP - Completed
-- Phase 3: Event Schema and Normalization - Completed
-- Phase 4: Detection Engine - Next
+- Fase 1: Prosjektoppsett og Git - Fullført
+- Fase 2: MVP med syntetiske hendelser - Fullført
+- Fase 3: Event Schema og normalisering - Fullført
+- Fase 4: Deteksjonsmotor - Pågår

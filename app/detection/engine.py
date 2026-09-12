@@ -1,5 +1,4 @@
 from datetime import datetime
-from pprint import pprint
 from app.detection.rules import (
     FAILED_LOGIN_THRESHOLD,
     FAILED_LOGIN_RULE_NAME,
@@ -8,14 +7,13 @@ from app.detection.rules import (
 )
 
 def detect_failed_logins(events):
-    failed_count = 0
     failed_times = []
     failed_by_user = {}
 
 
     for event in events:
         if event["event_type"] == "failed_login":
-            failed_count = failed_count + 1
+
 
             event_time = datetime.fromisoformat(event["timestamp"])
             failed_times.append(event_time)
@@ -29,9 +27,6 @@ def detect_failed_logins(events):
 
             failed_by_user[username].append(event_time)
 
-
-    print("Failed by user:")
-    pprint(failed_by_user)
 
     matched = False
     matched_username = None
