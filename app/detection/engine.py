@@ -7,7 +7,6 @@ from app.detection.rules import (
 )
 
 def detect_failed_logins(events):
-    failed_times = []
     failed_by_user = {}
 
 
@@ -16,7 +15,6 @@ def detect_failed_logins(events):
 
 
             event_time = datetime.fromisoformat(event["timestamp"])
-            failed_times.append(event_time)
 
 
             username = event["username"]
